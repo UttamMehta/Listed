@@ -1,0 +1,154 @@
+.container {
+  flex: 1;
+  height: 100%;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 20px;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.info p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+.info select {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #858585;
+  border: none;
+  outline: none;
+}
+.data {
+  display: flex;
+  align-items: center;
+  height: 80% !important;
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+}
+.data > div {
+  flex: 1;
+}
+.chart {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+.labels {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+.tickerss {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+}
+.ticker {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.tickerss p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #858585;
+  margin-left: calc(0.5rem + 14px);
+}
+
+.one {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #98d89e;
+}
+.two {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #f6dc7d;
+}
+.three {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #ee8484;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    height: 40%;
+    padding: 1rem;
+  }
+  .chart {
+    padding: 1rem 2rem;
+  }
+  .labels {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .ticker {
+    gap: 0.4rem;
+    font-size: 10px;
+    line-height: 15px;
+    white-space: nowrap;
+  }
+  .tickerss p {
+    font-size: 9px;
+    line-height: 12px;
+  }
+  .chart {
+    padding: 1rem 1rem;
+  }
+  .labels {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+  .one,
+  .two,
+  .three {
+    height: 10px;
+    width: 10px;
+  }
+}
